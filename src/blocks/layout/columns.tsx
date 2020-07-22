@@ -1,7 +1,7 @@
 import { IWPGBlock } from '../../types'
 import * as React from 'react'
 import { WPGBlock } from '../../index'
-import * as uniqid from 'uniqid'
+const uniqid = require('uniqid')
 
 const WPGColumnsBlock:React.SFC<IWPGBlock> = (props) => {
   const {
