@@ -16,6 +16,6 @@
     "noErrorTruncation": true,
     "paths": {
       "~/*": ["./src/*"],
-    },
+    }
   }
 }

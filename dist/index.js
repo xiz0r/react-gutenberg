@@ -1,4 +1,5 @@
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WPGBlock = void 0;
 const React = require("react");
 const blocks_1 = require("./blocks");
 const WPGBlocks = ({ blocks, mapToBlock }) => {

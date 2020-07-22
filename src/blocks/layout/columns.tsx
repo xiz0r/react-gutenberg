@@ -1,6 +1,7 @@
 import { IWPGBlock } from '../../types'
 import * as React from 'react'
 import { WPGBlock } from '../../index'
+import uniqid from 'uniqid'
 
 const WPGColumnsBlock:React.SFC<IWPGBlock> = (props) => {
   const {
@@ -16,7 +17,7 @@ const WPGColumnsBlock:React.SFC<IWPGBlock> = (props) => {
 
   const cols = innerBlocks.length
 
-  const columns = innerBlocks.map((col, ci) => <div className={`wp-block-column ${ci+1}-column`}>
+  const columns = innerBlocks.map((col, ci) => <div className={`wp-block-column ${ci+1}-column`} key={uniqid()}>
     {col.innerBlocks.map((block, bi) => <WPGBlock key={bi} block={block}/>)}
   </div>)
 
