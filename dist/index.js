@@ -18,6 +18,9 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !exports.hasOwnProperty(p)) __createBinding(exports, m, p);
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.WPGBlock = void 0;
 const React = __importStar(require("react"));
@@ -39,4 +42,5 @@ exports.WPGBlock = ({ block, mapToBlock }) => {
     return (React.createElement(TheBlock, { blockName: blockName, attrs: attrs, innerBlocks: innerBlocks, innerHTML: innerHTML }));
 };
 exports.default = WPGBlocks;
+__exportStar(require("./types"), exports);
 //# sourceMappingURL=index.js.map

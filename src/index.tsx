@@ -33,3 +33,5 @@ export const WPGBlock: React.FunctionComponent<IWPGBlockProps> = ({ block, mapTo
 }
 
 export default WPGBlocks
+
+export * from './types'
