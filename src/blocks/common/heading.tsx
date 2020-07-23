@@ -1,7 +1,7 @@
 import { IWPGBlock } from '../../types'
 import * as React from 'react'
 
-const WPGHeadingBlock:React.SFC<IWPGBlock> = (props) => {
+const WPGHeadingBlock:React.FunctionComponent<IWPGBlock> = (props) => {
   const {
     // attrs,
     // innerBlocks,

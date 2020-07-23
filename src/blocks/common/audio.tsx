@@ -1,7 +1,7 @@
 import { IWPGBlock } from '../../types'
 import * as React from 'react'
 
-const WPGAudioBlock:React.SFC<IWPGBlock> = (props) => {
+const WPGAudioBlock: React.FunctionComponent<IWPGBlock> = (props) => {
   const {
     // attrs,
     // innerBlocks,
@@ -9,7 +9,7 @@ const WPGAudioBlock:React.SFC<IWPGBlock> = (props) => {
   } = props
 
   return (
-    <div className="wpg-block wpg-b_audio" dangerouslySetInnerHTML={{ __html: innerHTML }}/>
+    <div className="wpg-block wpg-b_audio" dangerouslySetInnerHTML={{ __html: innerHTML }} />
   )
 }
 

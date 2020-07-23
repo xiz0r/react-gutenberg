@@ -1,7 +1,7 @@
 import { IWPGBlock } from '../../types'
 import * as React from 'react'
 
-const WPGGalleryBlock:React.SFC<IWPGBlock> = (props) => {
+const WPGGalleryBlock:React.FunctionComponent<IWPGBlock> = (props) => {
   const {
     // attrs,
     // innerBlocks,

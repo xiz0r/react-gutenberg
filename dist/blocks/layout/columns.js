@@ -21,7 +21,6 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = __importStar(require("react"));
 const index_1 = require("../../index");
-const uniqid = require('uniqid');
 const WPGColumnsBlock = (props) => {
     const { 
     // attrs,
@@ -31,7 +30,7 @@ const WPGColumnsBlock = (props) => {
         return null;
     }
     const cols = innerBlocks.length;
-    const columns = innerBlocks.map((col, ci) => React.createElement("div", { className: `wp-block-column ${ci + 1}-column`, key: uniqid() }, col.innerBlocks.map((block, bi) => React.createElement(index_1.WPGBlock, { key: bi, block: block }))));
+    const columns = innerBlocks.map((col, ci) => React.createElement("div", { className: `wp-block-column ${ci + 1}-column`, key: ci }, col.innerBlocks.map((block, bi) => React.createElement(index_1.WPGBlock, { key: bi, block: block }))));
     return (React.createElement("div", { className: `wp-block-columns has-${cols}-columns` }, columns));
 };
 exports.default = WPGColumnsBlock;

@@ -1,7 +1,7 @@
 import { IWPGBlock } from '../../types'
 import * as React from 'react'
 
-const WPGPreformattedBlock:React.SFC<IWPGBlock> = (props) => {
+const WPGPreformattedBlock:React.FunctionComponent<IWPGBlock> = (props) => {
   const {
     // attrs,
     // innerBlocks,

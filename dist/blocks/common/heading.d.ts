@@ -1,4 +1,4 @@
 import { IWPGBlock } from '../../types';
 import * as React from 'react';
-declare const WPGHeadingBlock: React.SFC<IWPGBlock>;
+declare const WPGHeadingBlock: React.FunctionComponent<IWPGBlock>;
 export default WPGHeadingBlock;

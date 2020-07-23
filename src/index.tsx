@@ -2,7 +2,7 @@ import * as React from 'react'
 import { GetTheBlock } from './blocks'
 import { IWPGBlocksProps, IWPGBlockProps } from './types'
 
-const WPGBlocks:React.SFC<IWPGBlocksProps> = ({ blocks, mapToBlock }) => {
+const WPGBlocks: React.FunctionComponent<IWPGBlocksProps> = ({ blocks, mapToBlock }) => {
   return (
     <div className="wpg-blocks">
       {blocks.filter(block => !!block.blockName).map((block, index) => <WPGBlock key={index} block={block} mapToBlock={mapToBlock} />)}
@@ -10,7 +10,7 @@ const WPGBlocks:React.SFC<IWPGBlocksProps> = ({ blocks, mapToBlock }) => {
   )
 }
 
-export const WPGBlock:React.SFC<IWPGBlockProps> = ({ block, mapToBlock }) => {
+export const WPGBlock: React.FunctionComponent<IWPGBlockProps> = ({ block, mapToBlock }) => {
 
   const {
     blockName,
